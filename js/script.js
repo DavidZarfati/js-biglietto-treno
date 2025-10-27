@@ -10,7 +10,7 @@
 
 let kmPercorso;
 do {
-    kmPercorso = parseInt(prompt("Inserisci il numero di chilometri che vuoi percorrere(tra 0 e 100000 Km):"));
+    kmPercorso = parseFloat(prompt("Inserisci il numero di chilometri che vuoi percorrere(tra 0 e 100000 Km):"));
 } while (isNaN(kmPercorso) || kmPercorso < 0 || kmPercorso > 100000);
 
 
@@ -66,3 +66,11 @@ else {
 
 // Variabili Generali
 // console.log(kmPercorso, eta, prezzoKm, prezzoViaggio,);
+
+
+// Ragionamento
+// chiedo eta e km da percorrere
+// Moltiplico il prezzo per KM per i KM percorsi
+// Controllo in base all'eta se hanno diritto ad uno sconto
+// Applico lo sconto al prezzo totale
+// do in output il prezzo totale, scontato se hanno diritto ad uno sconto
