@@ -1,6 +1,6 @@
 // console.log("Hello world");
-const kmPercorso = prompt("Inserisci il numero di chilometri che vuoi percorrere")
-const eta = prompt("Inserisci l'età di chi percorrà il percorso")
+// const kmPercorso = prompt("Inserisci il numero di chilometri che vuoi percorrere")
+
 
 // if (eta.length >= 3 &&
 //     event.key !== 'Backspace' &&
@@ -8,7 +8,17 @@ const eta = prompt("Inserisci l'età di chi percorrà il percorso")
 //     event.preventDefault();
 // }
 
+let kmPercorso;
+do {
+    kmPercorso = parseInt(prompt("Inserisci il numero di chilometri che vuoi percorrere(tra 0 e 100000 Km):"));
+} while (isNaN(kmPercorso) || kmPercorso < 0 || kmPercorso > 100000);
 
+
+
+let eta;
+do {
+    eta = parseInt(prompt("Inserisci l'età (0-150 anni):"));
+} while (isNaN(eta) || eta < 0 || eta > 150);
 
 
 const prezzoKm = 0.21
